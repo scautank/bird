@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Flappy Bird v1.0（Develop By canye）</title>
+    <style type="text/css">
+        body,div,ul,li { margin: 0; padding: 0; }
+        body { background: #000; }
+        li { list-style: none; }
+        #wrap { width: 388px; height:620px; margin: 10px auto; background:url("img/bg.jpg") no-repeat; position: relative; overflow: hidden;}
+        #wrapMain {  height:510px; position: relative; }
+        #score { position: absolute; top: 25px; left: 170px; font-size: 70px; color: #fff; }
+        #tap { width: 254px; height: 230px; background: url("img/tapBg.png") no-repeat; position: absolute; top: 130px; left: 64px; }
+        #bird { width: 44px; height: 30px; background: url("img/bird.gif") no-repeat; position: absolute; top: 228px; left: 85px;  z-index:1;}
+        #bamboo { height:510px; position: absolute;}
+        #bamboo li{ height:510px; width: 69px; position:absolute; }
+        .bambooTop { width: 69px; height: 100px;  background: url("img/bambooBg.png") center repeat-y; position: absolute; top: 0; }
+        .bambooBottom { width: 69px; height: 100px;  background: url("img/bambooBg.png") center repeat-y; position: absolute; bottom: 0; }
+        .bambooTopBg { width: 69px; height: 35px;  background: url("img/bambooBottom.png") no-repeat; position: absolute; bottom: 0; left: 0; }
+        .bambooBottomBg { width: 69px; height: 35px;  background: url("img/bambooTop.png") no-repeat; position: absolute; top: 0; left: 0; }
+    </style>
+    <script type="text/javascript" src="js/bird.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrapMain">
+            <div id="tap"></div>
+            <div id="bird"></div>
+            <ul id="bamboo">
+
+            </ul>
+            <div id="score">0</div>
+        </div>
+    </div>
+</body>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</html>
